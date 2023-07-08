@@ -54,7 +54,9 @@ class LoginScreenState extends State<LoginScreen> {
 
   Widget submitButton() {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        formKey.currentState?.reset();
+      },
       child: const Text('Submit!'),
     );
   }
